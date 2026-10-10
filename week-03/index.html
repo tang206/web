@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fytang的前端网页作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <main class="page">
+        <section class="hero" id="top">
+            <span class="hero-dot" aria-hidden="true"></span>
+            <h1>fytang的前端网页作<br>品集</h1>
+            <p class="hero-sub">这是我的前端网页作品，点击下方卡片即可跳转到具体页面，探索每一个项目的交互与实现。</p>
+        </section>
+
+        <section class="works" id="works">
+            <h2 class="section-title">Featured Works</h2>
+
+            <div id="error-container" class="hidden">
+                <p>No meals found. Try another input.</p>
+            </div>
+            <div id="result-heading"></div>
+
+            <div id="meals" class="meals-container">
+                <article class="meal" data-url="https://web-chi-seven-rwhi1o06f3.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./img/quiztime.png" alt="Quiz Time 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-num">1</span> Quiz Time</h3>
+                        <p class="meal-desc">互动答题应用，练习题目切换、得分统计与结果反馈。</p>
+                    </div>
+                </article>
+
+                <article class="meal" data-url="https://register-ttt-dc8c.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./img/register.png" alt="Register Form 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-num">2</span> Register Form</h3>
+                        <p class="meal-desc">表单校验练习页，涵盖输入校验、错误提示。</p>
+                    </div>
+                </article>
+
+                <article class="meal" data-url="https://web-homework-theta.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./img/recipe.png" alt="Recipe Finder 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-num">3</span> Recipe Finder</h3>
+                        <p class="meal-desc">食谱搜索应用，基于 API 拉取菜谱结果并展示。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div id="meal-details" class="hidden">
+            <button id="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to recipes</button>
+            <div class="meal-details-content"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
